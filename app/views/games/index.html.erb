@@ -1,5 +1,130 @@
+<%= stylesheet_link_tag "game" %>
 <%= link_to 'Home', root_path %>
 
 
 <%#= link_to @referee.name, new_referee_review_path(@referee) %>
+<% @table.each do |element| %>
+	<%= element %>
+<% end %>
+<%# @names.each do |referee| %>
+	<%#= p referee[39..(referee.index("(")-2)] %>
+<%# end %>
 
+<%# @games.each_with_index do |game, index| %>
+	<%# if (index %5 == 0) then %>
+	<%#= game %>
+	<%# end %>
+<%# end %>
+
+
+
+
+<div class="gamepg_top_part">
+<div>
+  Select The Game Official's You Wish To Rate Below:
+</div>
+</div>
+
+<div class= "gamepg_middle_part">
+
+<div class= "wba_logo">
+  <%= link_to root_path do %>
+<%= image_tag ("WBA.PNG") %>
+<!-- <%= link_to 'Home', root_path %> -->
+<% end %>
+</div>
+
+
+</div>
+
+<div class="gamepg_bottom_part">
+
+
+  <article class="col-xs-12 post referee-assignments post-6203 page type-page status-publish hentry">
+
+          <header class="entry-header">
+              <h1 class="entry-title">NBA Referee Assignments</h1>            <div class="entry-meta">March 18, 2018</div>
+          </header>
+
+          <div class="entry-content">
+            <div class="pat_was_pissed">
+              <p>
+                Referee assignments are posted at approximately 9:00am ET each game day.
+              </p>
+            </div>
+
+              <div class="dayContent">
+                <div class="nba-refs-content">
+                  <table cellspacing="4" cellpadding="2" class="table">
+                      <thead>
+                        <tr>
+                            <th class="tableTitle">Game</th>
+                            <th class="tableTitle">Official 1</th>
+                            <th class="tableTitle">Official 2</th>
+                            <th class="tableTitle">Official 3</th>
+                            <th class="tableTitle">Alternate</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                                                    <tr>
+                                  <td>Oklahoma City @ Toronto</td>
+                                  <td>                                    <a href="http://official.nba.com/wp-content/uploads/sites/4/2017/10/Marc-Davis.pdf" target="_blank">
+                                        Marc Davis (#8)                                    </a>
+                                                                    </td>
+                                  <td>                                    <a href="http://official.nba.com/wp-content/uploads/sites/4/2017/10/Brent-Barnaky.pdf" target="_blank">
+                                        Brent Barnaky (#36)                                    </a>
+                                      </td>
+                                  <td>                                    <a href="http://official.nba.com/wp-content/uploads/sites/4/2017/10/Haywoode-Workman.pdf" target="_blank">
+                                        Haywoode Workman (#66)                                    </a>
+                                      </td>
+                                  <td></td>
+                              </tr>
+                                                      <tr>
+                                  <td>Boston @ New Orleans</td>
+                                  <td>                                    <a href="http://official.nba.com/wp-content/uploads/sites/4/2017/10/Bill-Kennedy.pdf" target="_blank">
+                                        Bill Kennedy (#55)                                    </a>
+                                                                    </td>
+                                  <td>                                    <a href="http://official.nba.com/wp-content/uploads/sites/4/2017/10/Tyler-Ford.pdf" target="_blank">
+                                        Tyler Ford (#39)                                    </a>
+                                      </td>
+                                  <td>                                    <a href="http://official.nba.com/wp-content/uploads/sites/4/2017/10/Gediminas-Petraitis.pdf" target="_blank">
+                                        Gediminas Petraitis (#50)                                    </a>
+                                      </td>
+                                  <td></td>
+                              </tr>
+                                                      <tr>
+                                  <td>Houston @ Minnesota</td>
+                                  <td>                                    <a href="http://official.nba.com/wp-content/uploads/sites/4/2017/10/Ed-Malloy.pdf" target="_blank">
+                                        Ed Malloy (#14)                                    </a>
+                                                                    </td>
+                                  <td>                                    <a href="http://official.nba.com/wp-content/uploads/sites/4/2017/10/Marat-Kogut.pdf" target="_blank">
+                                        Marat Kogut (#32)                                    </a>
+                                      </td>
+                                  <td>                                    <a href="http://official.nba.com/wp-content/uploads/sites/4/2017/10/Leon-Wood.pdf" target="_blank">
+                                        Leon Wood (#40)                                    </a>
+                                      </td>
+                                  <td></td>
+                              </tr>
+                                                      <tr>
+                                  <td>Portland @ LA Clippers</td>
+                                  <td>                                    <a href="http://official.nba.com/wp-content/uploads/sites/4/2017/10/Scott-Foster.pdf" target="_blank">
+                                        Scott Foster (#48)                                    </a>
+                                                                    </td>
+                                  <td>                                    <a href="http://official.nba.com/wp-content/uploads/sites/4/2017/10/Mark-Lindsay.pdf" target="_blank">
+                                        Mark Lindsay (#29)                                    </a>
+                                      </td>
+                                  <td>                                    <a href="http://official.nba.com/wp-content/uploads/sites/4/2017/10/Dedric-Taylor.pdf" target="_blank">
+                                        Dedric Taylor (#21)                                    </a>
+                                      </td>
+                                  <td></td>
+                              </tr>
+                                              </tbody>
+                  </table>
+                </div>
+              </div>
+
+
+
+          </div>
+
+  </div>

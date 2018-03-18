@@ -1,11 +1,70 @@
-	<%= link_to 'Games', games_path %>
+<%= stylesheet_link_tag "referee" %>
 
 
-<% @referees.each do |referee| %>
-	<%= link_to "#{referee.name}", referee_path(referee) %>
-	<%= referee.number %>
-<% end %>
+<div class="ref_top_section">
 
+	<div class="landscape_photo">
+
+		<div class="wba_logo">
+    <%= image_tag ("WBA.PNG") %>
+		</div>
+
+	</div>
+
+</div>
+
+<div class="ref_bottom_section">
+	<div class="bottom_left">
+
+		<div class="wba_acronymn box">
+			 Whistle Blower's Association
+		</div>
+
+		<div class="wba_info">
+			<p> Welcome to the official website for the "Whistle Blower's Association", a page dedicated to holding every official accountable
+				for the calls that he makes! Here you can find the whistle rating for the officials you love to hate! You can search for your
+				team's most recent game, rate the official on his or her performance, and them a comment to tell them how you feel about their calls!.</p>
+		</div>
+
+	</div>
+
+<div class="bottom_middle">
+
+	<div class="bm_head">
+		<div class="current_year box">
+		 	2018 Rankings
+		</div>
+	</div>
+
+	<div class="refs_ranking_table">
+		<% @referees.each do |referee| %>
+				<%= link_to "#{referee.name}", new_referee_review_path(referee) %>
+				<%= referee.number %>
+			<% end %>
+	</div>
+
+	<div class="bm_middle_foot">
+			<div class="rate_game_button box">
+				<%= link_to "Rate Your Game's Officials", games_path %>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="bottom_right">
+		<div class="rankings_2019_button box">
+			2019 Rankings TBD
+			</div><div class="rankings_2020_button box">
+				2020 Rankings TBD
+			</div><div class="officials_roster box">
+				NBA Officials Roster
+			</div><div class="officials_videos box">
+				NBA Officiating Videos
+			</div>
+
+		</div>
+
+</div>
 
 
 <!-- new_referee_review_path(referee) -->

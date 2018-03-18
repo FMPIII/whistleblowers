@@ -11,39 +11,15 @@ class GamesController < ApplicationController
 #   puts "#{index+1} #{item}"
 # }
   # @referee_id = Referee.find_by(name: )
-
-class Scraper
-
-  attr_accessor :parse_page
-
-  def initialize
-   doc = HTTParty.get("http://official.nba.com/referee-assignments/")
-   @parse_page ||= Nokogiri::HTML(doc)
-  end
-
-  def get_names
-    item_container.css("a").css
-  end
-
-  def get_games
-   item_container.css('td').css
-  end
-
-  def get_table
-    return @parse_page.css('.referee-assignments')
-  end
-
- private
-
- def item_container
-   parse_page.css("nba-refs-content")
- end
-end
-
-@scraper = Scraper.new
-puts "======== #{@scraper.get_table}"
-@table = @scraper.get_table
-
+  @scraper = Scraper.new
+  @table = @scraper.get_table
+	@games = @scraper.get_games
+	@names = @scraper.get_names
   @referee = Referee.find_by(name: "Lauren Holtkamp")
+  @referees = Referee.all
+
+
+	end
+	def update
 	end
 end
