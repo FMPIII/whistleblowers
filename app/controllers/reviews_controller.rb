@@ -1,4 +1,6 @@
 class ReviewsController < ApplicationController
+	before_action :set_referee
+
 	def index
 		redirect_to games_path
 	end
@@ -6,12 +8,10 @@ class ReviewsController < ApplicationController
 		@review = Review.new
 	end
 	def create
-		# @referee = Referee.find_by(params[:id])
-    @review = Review.new(review_params)
-    # @review.referee_id = params[:id]
+    @review = @referee.reviews.build(review_params)
     respond_to do |format|
-      if @review.save
-        format.html { redirect_to @review, notice: 'Review was successfully created.' }
+      if @review.save!
+        format.html { redirect_to @referee, notice: 'Review was successfully created.' }
         format.json { render :show, status: :created, location: @review }
       else
         format.html { render :new }
@@ -21,7 +21,9 @@ class ReviewsController < ApplicationController
   end
 	private
 	def review_params
-		# params.require(:review).permit(:comment).merge(:referee_id => params[:id])
-		# params[:referee_id] = @referee_id
+		params.require(:review).permit(:comment)
+	end
+	def set_referee
+		@referee = Referee.find(params[:referee_id])
 	end
 end

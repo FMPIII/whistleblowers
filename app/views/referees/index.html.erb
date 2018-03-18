@@ -2,10 +2,11 @@
 
 
 <% @referees.each do |referee| %>
-	<%= referee.name %>
+	<%= link_to "#{referee.name}", referee_path(referee) %>
 	<%= referee.number %>
 <% end %>
 
 
 
-
+<!-- new_referee_review_path(referee) -->
+<!-- params[:referee_id] -->
