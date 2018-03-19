@@ -16,9 +16,12 @@ class Scraper
   end
 
   def get_table
-    return @parse_page.css('.referee-assignments')
+    return @parse_page.css('.referee-assignments').map(&:content)
   end
 
+  def get_date
+    return @parse_page.css('div.entry-meta').map(&:content)
+  end
  private
 
  def item_container

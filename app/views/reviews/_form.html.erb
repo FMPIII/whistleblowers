@@ -6,6 +6,26 @@
    </div>
 
    <div class="field">
+     <%= form.label :this_official_disappears_in_the_last_2_minutes_of_a_game %>
+     <%= form.check_box :this_official_disappears_in_the_last_2_minutes_of_a_game, id: :review_score %>
+   </div>
+
+   <div class="field">
+     <%= form.label :this_official_favors_the_home_team %>
+     <%= form.check_box :this_official_favors_the_home_team, id: :review_score %>
+   </div>
+
+   <div class="field">
+     <%= form.label :this_official_favors_the_superstars %>
+     <%= form.check_box :this_official_favors_the_superstars, id: :review_score %>
+   </div>
+
+   <div class="field">
+     <%= form.label :this_official_sucks %>
+     <%= form.check_box :this_official_sucks, id: :review_score %>
+   </div>
+
+   <div class="field">
      <%= form.label :comment %>
      <%= form.text_area :comment, id: :review_body %>
    </div>

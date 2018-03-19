@@ -1,25 +1,28 @@
 class GamesController < ApplicationController
 	def index
+	  @scraper = Scraper.new
+		@games = @scraper.get_games
+		@names = @scraper.get_names
+		@date = @scraper.get_date
 
+	  @namecollection = []
+	  @names.each do |referee|
+		  @namecollection << referee[39..(referee.index("(")-2)]
+		end
+		@referee_array = []
+		@namecollection.each do |referee|
+			@referee_array << Referee.find_by(name: referee)
+		end
 
-# 		url = "http://official.nba.com/referee-assignments/"
-# 		response = HTTParty.get url
-#   	dom = Nokogiri::HTML(response.body)
-#   	@games = dom.css(".nba-refs-content td").map(&:content)
-#   	@referees = dom.css(".nba-refs-content a").map(&:content)
-#   	@games.each_with_index { |item, index|
-#   puts "#{index+1} #{item}"
-# }
-  # @referee_id = Referee.find_by(name: )
-  @scraper = Scraper.new
-  @table = @scraper.get_table
-	@games = @scraper.get_games
-	@names = @scraper.get_names
-  @referee = Referee.find_by(name: "Lauren Holtkamp")
-  @referees = Referee.all
-
-
+		@gamecollection = []
+		@games.each_with_index do |game, index|
+		  if (index %5 == 0) then
+		    @gamecollection << game
+		  end
+	  end
 	end
+
 	def update
 	end
+
 end

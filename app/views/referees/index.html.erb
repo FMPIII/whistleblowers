@@ -38,7 +38,7 @@
 
 	<div class="refs_ranking_table">
 		<% @referees.each do |referee| %>
-				<%= link_to "#{referee.name}", new_referee_review_path(referee) %>
+				<%= link_to "#{referee.name}", referee_reviews_path(referee) %>
 				<%= referee.number %>
 			<% end %>
 	</div>
