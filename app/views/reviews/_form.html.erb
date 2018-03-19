@@ -1,23 +1,19 @@
  <%= form_with(model: [@referee, @review], local: true) do |form| %>
 
-   <div class="field">
-     <%= form.label :name %>
-     <%= form.text_field :name, id: :review_name %>
-   </div>
 
    <div class="field">
+     <%= form.check_box :disappears, {}, "1", "0" %>
      <%= form.label :this_official_disappears_in_the_last_2_minutes_of_a_game %>
-     <%= form.check_box :this_official_disappears_in_the_last_2_minutes_of_a_game, id: :review_score %>
    </div>
 
    <div class="field">
+     <%= form.check_box :home, {}, "1", "0" %>
      <%= form.label :this_official_favors_the_home_team %>
-     <%= form.check_box :this_official_favors_the_home_team, id: :review_score %>
    </div>
 
    <div class="field">
+     <%= form.check_box :superstars, {}, "1", "0" %>
      <%= form.label :this_official_favors_the_superstars %>
-     <%= form.check_box :this_official_favors_the_superstars, id: :review_score %>
    </div>
 
 

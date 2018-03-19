@@ -22,7 +22,7 @@ class ReviewsController < ApplicationController
   end
 	private
 	def review_params
-		params.require(:review).permit(:comment, :sucks)
+		params.require(:review).permit(:comment, :sucks, :disappears, :home, :superstars)
 	end
 	def set_referee
 		@referee = Referee.find(params[:referee_id])
