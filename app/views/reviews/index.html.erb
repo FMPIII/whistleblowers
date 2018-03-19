@@ -1,6 +1,5 @@
 <%= link_to 'Home', root_path %>
-<% p @reviews %>
-<% puts '--------!-!-!-------' %>
+
 <% @reviews.each do |review| %>
 	<%= review.comment %>
 <% end %>

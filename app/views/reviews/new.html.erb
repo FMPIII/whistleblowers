@@ -1,1 +1,64 @@
-<%= render 'form', review: @review, referee_id: @referee_id %>
+<%= stylesheet_link_tag "new_review" %>
+
+<div class="review_top_part">
+  <div class="instructions">
+    Leave Your Comment for Tonight's Game Regarding: <%= @referee.name %>
+  </div>
+  <div class="wba_score">
+    Current W.B.A. Score:    ____
+  </div>
+  <div class="comments_history">
+    W.B.A. Comments History
+  </div>
+</div>
+
+<div class= "wba_logo">
+  <%= link_to root_path do %>
+<%= image_tag ("WBA.PNG") %>
+<!-- <%= link_to 'Home', root_path %> -->
+<% end %>
+</div>
+
+
+<div class= "rv_middle_part">
+
+  <div class= "rv_middle_left">
+
+      <div class="survey_section">
+
+        <div class="survey_instructions">
+        Please rate your official by answering the following questions.<br>
+        When you are finished rating and have left your comment, click the submit button!<br>
+        Come back to the page soon!<br>
+        <!-- <div class="true_false_instructions">
+        <span class="span_statement"> Statement </span> <span class="span_truefalse">True/False </span>
+       </div> -->
+
+
+      </div>
+
+      
+
+    <div class="rv_middle_right">
+      <div class="survey_questions">
+        <div class="comment_section">
+          You A Leaving a Comment Regarding: <%= @referee.name %></div></br>
+
+
+          <%= render 'form' , review: @review, referee_id: @referee_id %>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+
+
+</div>
+
+
+<div class="rv_bottom_section">
+  <div class="return_link">
+    <%= link_to "Back", games_path %>
+  </div>
+
+</div>
