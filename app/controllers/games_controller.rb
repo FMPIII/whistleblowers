@@ -4,7 +4,8 @@ class GamesController < ApplicationController
 		@games = @scraper.get_games
 		@names = @scraper.get_names
 		@date = @scraper.get_date
-
+		@nogamedaygames = ["Lakers @ Bulls", "Heat @ Celtics", "Hornets @ Nets"]
+		@nogamedayrefs = ["Nick Buchert", "Sean Wright", "Derrick Collins", "Jason Phillips", "Pat Fraher", "John Goble", "Brent Barnaky", "Bill Kennedy", "Ray Acosta"]
 	  @namecollection = []
 	  @names.each do |referee|
 		  @namecollection << referee[39..(referee.index("(")-2)]

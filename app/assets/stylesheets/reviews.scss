@@ -1,3 +1,132 @@
 // Place all the styles related to the reviews controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+// ********THIS IS CSS FOR PAGE 3/ RATING/PAGE ********
+body{
+
+  background-image: url('second_court3');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+
+
+.instructions{
+  text-align: center;
+  font-size: 1.25em;
+  color: white;
+  margin-left: -115px;
+  margin-top: 18px;
+}
+
+.wba_score, .comments_history{
+  text-align: center;
+  font-size: 1em;
+  color: white;
+
+}
+
+.wba_score, .comments_history{
+      margin-left: -133px;
+}
+
+.wba_score{
+  margin-top: 10px;
+}
+
+.wba_logo{
+  margin-top: -40px;
+}
+
+// **********CSS PAGE 3/REVIEW MIDDLE PART *******
+
+.survey_instructions, .return_link, .submit_link{
+  background-color: #ce393d;
+    border: 2px solid black;
+    text-shadow: -1px -1 black, -1 1px black, -1px -1 black, -1 -1px black;
+    text-align: center;
+    font-size: 1.05em;
+}
+
+.survey_questions{
+  background-color: #ce393d;
+    border: 2px solid black;
+    text-shadow: -1px -1 black, -1 1px black, -1px -1 black, -1 -1px black;
+    text-align: center;
+    font-size: 1.05em;
+}
+
+.true_false_instructions{
+  margin-left: 250px;
+}
+
+.survey_instructions {
+  margin-top: 51px;
+}
+
+.survey_instructions, .survey_questions, .return_link{
+  margin-left: 55px;
+}
+
+.survey_questions, .survey_instructions{
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.answer{
+  margin-left: 192px;
+}
+
+.q1_answer{
+ margin-left: 170px;
+}
+
+.q2_answer{
+margin-left: 152px;
+}
+
+.q3_answer{
+margin-left: 141px;
+}
+
+.q4_answer{
+margin-left: 12px;
+}
+
+.q5_answer{
+margin-left: 244px;
+}
+
+.rv_middle_part{
+  display: flex;
+}
+
+.true_false_instructions{
+      margin-top: 20px;
+}
+
+.rv_middle_right{
+  display: flex;
+  margin-left: 120px;
+}
+
+.return_link{
+  margin-left: 240px;
+}
+
+
+// ***************REVIEW PAGE BOTTOM SECTION ******************
+
+.rv_bottom_section{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+
+.submit_link{
+      margin-right: 300px;
+}

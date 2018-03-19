@@ -1,5 +1,11 @@
 <%= link_to 'Home', root_path %>
+<div class="ref-container">
+	
+	<h1>Reviews</h1>
+	<h3><%= @referee.name %></h3>
 
-<% @reviews.each do |review| %>
-	<%= review.comment %>
-<% end %>
+	<% @reviews.each do |review| %>
+		<%= review.comment %>
+		<%= review.sucks %>
+	<% end %>
+</div>

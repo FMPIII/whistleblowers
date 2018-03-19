@@ -3,6 +3,7 @@ class ReviewsController < ApplicationController
 
 	def index
 		@reviews = Review.where(referee_id: params[:referee_id])
+		@referee = set_referee
 	end
 	def new
 		@review = Review.new
@@ -21,7 +22,7 @@ class ReviewsController < ApplicationController
   end
 	private
 	def review_params
-		params.require(:review).permit(:comment)
+		params.require(:review).permit(:comment, :sucks)
 	end
 	def set_referee
 		@referee = Referee.find(params[:referee_id])

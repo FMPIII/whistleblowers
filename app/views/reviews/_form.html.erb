@@ -20,15 +20,17 @@
      <%= form.check_box :this_official_favors_the_superstars, id: :review_score %>
    </div>
 
-   <div class="field">
-     <%= form.label :this_official_sucks %>
-     <%= form.check_box :this_official_sucks, id: :review_score %>
-   </div>
 
    <div class="field">
-     <%= form.label :comment %>
-     <%= form.text_area :comment, id: :review_body %>
+     <%= form.check_box :sucks, {}, "1", "0" %>
+     <%= form.label :this_official_sucks %>
    </div>
+
+
+   <!-- <div class="field"> -->
+     <%#= form.label :comment %>
+     <%#= form.text_area :comment, id: :review_body %>
+   <!-- </div> -->
 
    <div class="actions">
      <%= form.submit "Submit Answers and Comment" %>

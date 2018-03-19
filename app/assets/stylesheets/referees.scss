@@ -1,3 +1,105 @@
 // Place all the styles related to the referees controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+background-color: #2d5c97;
+color: black;
+}
+// *****************TOP-SECTION ****************
+.ref_top_section{
+
+  background-image: url('angryfan7.png');
+  background-repeat: no-repeat;
+  border: 3px solid #a9a9a7;
+  width: 1209px;
+  height: 420px;
+  margin-left: 20px;
+  margin-bottom: -200px;
+}
+
+.wba_logo{
+margin-left: 20px;
+}
+.wba_logo img{
+width: 150px;
+margin-top: 10px;
+border-radius: 50%;
+}
+
+
+// *******************BOTTOMM-SECTION*******************
+
+.ref_bottom_section{
+
+  background-image: url('court3.jpg');
+  background-repeat: no-repeat;
+  border: 3px solid #a9a9a7;
+  width: 1209px;
+  height: 420px;
+  margin-left: 20px;
+  margin-bottom: -200px;
+}
+
+.ref_bottom_section{
+  display: flex;
+  text-align: center;
+}
+
+.wba_acronymn{
+  margin-left: 32px;
+  margin-top: 17px;
+  background-color: #fee388;
+    border: 2px solid black;
+    text-shadow: -1px -1 black, -1 1px black, -1px -1 black, -1 -1px black;
+    text-align: center;
+    font-size: 1em;
+}
+
+.wba_info{
+  background-color: #fee388;
+    border: 2px solid black;
+    text-shadow: -1px -1 black, -1 1px black, -1px -1 black, -1 -1px black;
+    text-align: center;
+    font-size: 1em;
+  margin-top: 95px;
+    margin-left: 32px;
+}
+
+
+.current_year,.rankings_2019_button, .rankings_2020_button, .officials_roster, .officials_videos, .rate_game_button{
+  background-color: #fee388;
+    border: 2px solid black;
+    text-shadow: -1px -1 black, -1 1px black, -1px -1 black, -1 -1px black;
+    text-align: center;
+    font-size: 1em;
+
+}
+
+.rankings_2019_button, .rankings_2020_button, .officials_roster, .officials_videos{
+  margin-right: 24px;
+}
+
+
+.bottom_middle, .bottom_right{
+  margin-top: 17px
+}
+
+.bm_head{
+  width: 129px;
+margin-left: 38%;
+}
+
+.bm_middle_foot{
+  width: 145px;
+margin-left: 38%;
+margin-top: 131px;
+}
+
+.bottom_right{
+min-width: 200px;
+}
+
+.officials_roster{
+  margin-top: 87px
+}
