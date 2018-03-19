@@ -76,8 +76,8 @@ referee_list = [
 [77, "Karl Lane"],
 ]
 
-referee_list.each do |number, name|
-  Referee.create(number: number, name: name)
+referee_list.each do |number, name, score = 1.0|
+  Referee.create(number: number, name: name, score: score)
 end
 
 puts 'database has been seeded'

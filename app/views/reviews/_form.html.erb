@@ -23,10 +23,10 @@
    </div>
 
 
-   <!-- <div class="field"> -->
-     <%#= form.label :comment %>
-     <%#= form.text_area :comment, id: :review_body %>
-   <!-- </div> -->
+   <div class="field">
+     <%= form.text_area :comment, id: :review_body %>
+     <%= form.label :comment %>
+   </div>
 
    <div class="actions">
      <%= form.submit "Submit Answers and Comment" %>

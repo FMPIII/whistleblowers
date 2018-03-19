@@ -1,4 +1,4 @@
-<%= stylesheet_link_tag "referee" %>
+
 
 
 <div class="ref_top_section">
@@ -37,9 +37,11 @@
 	</div>
 
 	<div class="refs_ranking_table">
-		<% @referees.each do |referee| %>
+		<% @referees_sorted_short.each do |referee| %>
+				<div class="worst-ref-list">
 				<%= link_to "#{referee.name}", referee_reviews_path(referee) %>
-				<%= referee.number %>
+				<%= referee.score %>
+				<div>
 			<% end %>
 	</div>
 
