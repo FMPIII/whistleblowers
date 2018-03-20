@@ -11,7 +11,8 @@
     W.B.A. Comments History
   </div> -->
 </div>
-
+<br>
+<br>
 <div class= "rvpg_wba_logo">
   <%= link_to root_path do %>
 <%= image_tag ("WBA.PNG") %>
@@ -26,8 +27,8 @@
       <div class="survey_section">
 
         <div class="survey_instructions">
-        Please rate your official by answering the following questions.<br>
-        When you are finished rating and have left your comment, click the submit button!<br>
+        Please rate your official by checking the boxes that you feel apply to this official.<br>
+        Next, leave a comment explaining in detail your thoughts on this official, then click the submit button!<br>
         Come back to the page soon!<br>
       </div>
 
@@ -41,6 +42,7 @@
 
           <%= render 'form' , review: @review, referee_id: @referee_id %>
         </div>
+        <br>
       </div>
     </div>
       </div>
@@ -52,7 +54,7 @@
 
 <div class="rv_bottom_section">
   <div class="return_link">
-    <%= link_to "Back", games_path %>
+    <%= link_to "Return to Games Page", games_path %>
   </div>
 
 </div>

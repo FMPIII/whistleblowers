@@ -19,7 +19,7 @@ body{
   text-align: center;
   font-size: 1.75em;
   color: white;
-  margin-left: -115px;
+  margin-left: 88px;
   margin-top: 18px;
 }
 
@@ -67,16 +67,21 @@ body{
 }
 
 .survey_instructions {
-  margin-top: 51px;
+  margin-top: 65px;
+  padding: 7px;
+  margin-left: 301px;
+  color: white;
 }
 
-.survey_instructions, .survey_questions, .return_link{
+.return_link{
   margin-left: 55px;
 }
 
-.survey_questions, .survey_instructions{
+.survey_questions{
   padding: 15px;
   margin-top: 15px;
+  margin-left: 290px
+
 }
 
 .answer{
@@ -103,6 +108,15 @@ margin-left: 12px;
 margin-left: 244px;
 }
 
+#review_body{
+  height: 5px;
+  width: 10px;
+  height: 55px;
+width: 314px;
+margin-left: 42px;
+margin-top: 5px;
+}
+
 .rv_middle_part{
   display: flex;
 }
@@ -127,6 +141,14 @@ margin-left: 244px;
   display: flex;
   justify-content: space-between;
   margin-top: 55px;
+  margin-left: 312px;
+  color: white;
+
+}
+
+.rv_bottom_section a{
+  text-decoration: none;
+
 }
 
 .submit_link{
@@ -176,7 +198,8 @@ margin-left: 5px;
 }
 
 .rvpg_reviews_area, .rvpg_refphoto_area{
-      margin-top: 35px;
+  margin-top: 57px;
+margin-left: -23px;
       background-color: #ce393d;
         border: 2px solid black;
         text-shadow: -1px -1 black, -1 1px black, -1px -1 black, -1 -1px black;
