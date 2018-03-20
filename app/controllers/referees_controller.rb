@@ -17,10 +17,10 @@ def index
 		end
 private
 	def score (array)
-	 sum_of_trues = 0.0
+	 sum_of_trues = 4.0
 	 array.each do |element|
 	   if element == true
-	     sum_of_trues += 1.0
+	     sum_of_trues -= 1.0
 	   end
 	 end
 	 return sum_of_trues/4.0
