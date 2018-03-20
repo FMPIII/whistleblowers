@@ -5,7 +5,7 @@
 
 	<div class="landscape_photo">
 
-		<div class="wba_logo">
+		<div class="ref_wba_logo">
     <%= image_tag ("WBA.PNG") %>
 		</div>
 
@@ -37,12 +37,14 @@
 	</div>
 
 	<div class="refs_ranking_table">
+		<ol>
 		<% @referees_sorted_short.each do |referee| %>
-				<div class="worst-ref-list">
+				<li class="worst-ref-list">
 				<%= link_to "#{referee.name}", referee_reviews_path(referee) %>
 				<%= referee.score %>
-				<div>
+			</li>
 			<% end %>
+		</ol>
 	</div>
 
 	<div class="bm_middle_foot">

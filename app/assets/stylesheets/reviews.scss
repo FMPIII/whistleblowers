@@ -10,14 +10,14 @@ body{
   background-image: url('second_court3');
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+
 }
 
 
 
 .instructions{
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1.75em;
   color: white;
   margin-left: -115px;
   margin-top: 18px;
@@ -38,8 +38,10 @@ body{
   margin-top: 10px;
 }
 
-.wba_logo{
+.rvpg_wba_logo{
   margin-top: -40px;
+
+
 }
 
 // **********CSS PAGE 3/REVIEW MIDDLE PART *******
@@ -129,4 +131,82 @@ margin-left: 244px;
 
 .submit_link{
       margin-right: 300px;
+}
+
+// *********************PAGE 4 CSS STYLING **********
+
+.rvpg_homepage_button, .rvpg_reviews_area, .rvpg_refphoto_area{
+  color: white;
+}
+
+.rvpg_total_review_history{
+  color: white;
+}
+
+.rvpg_title, .rvpg_wba_score{
+  text-align: center;
+  font-size: 1.25em;
+  color: white;
+}
+
+.rvpg_top{
+      margin-top: 32px;
+}
+
+.rvpg_wba_logo img{
+width: 150px;
+margin-top: 10px;
+border-radius: 50%;
+}
+
+.rvpg_bottom{
+  display: flex;
+  justify-content: space-around;
+}
+
+.rvpg_homepage_button{
+  width: 145px;
+  margin-top: 12px;
+margin-left: 5px;
+  background-color: #ce393d;
+    border: 2px solid black;
+    text-shadow: -1px -1 black, -1 1px black, -1px -1 black, -1 -1px black;
+    text-align: center;
+    font-size: 1em;
+}
+
+.rvpg_reviews_area, .rvpg_refphoto_area{
+      margin-top: 35px;
+      background-color: #ce393d;
+        border: 2px solid black;
+        text-shadow: -1px -1 black, -1 1px black, -1px -1 black, -1 -1px black;
+        text-align: center;
+        font-size: 1em;
+}
+
+.rvpg_reviews_area{
+width: 145px;
+
+
+}
+
+.rvpg_refphoto_area{
+width: 120px;
+}
+
+.rvpg_placeholder{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.rvpg_ref_photo_placeholder, .rvpg_total_review_history{
+  height: 300px;
+  width: 300px;
+  background-color: #ce393d;
+  text-align: center;
+}
+
+.rvpg_placeholder{
+  margin-top: 9px;
 }

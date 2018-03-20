@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-color: white;
+
 background-color: #2d5c97;
 text-decoration: none;
 }
@@ -20,8 +20,17 @@ table a{
 
 // ****************** game page/page 2 middle part*****
 
+.gamepg_top_part{
+  color: white;
+  margin-top: 23px,
+}
+
 .gamepg_middle_part{
   display: flex;
+}
+
+.wba_logo{
+  margin-top: -9px;
 }
 
 .wba_logo img{

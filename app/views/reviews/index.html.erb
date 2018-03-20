@@ -1,10 +1,61 @@
-<%= link_to 'Home', root_path %>
+
+<!-- <%= link_to 'Home', root_path %>
 <div class="ref-container">
-	
+
 	<h1>Reviews</h1>
 	<h3><%= @referee.name %></h3>
 
 	<% @reviews.each do |review| %>
 		<%= review.comment %>
 	<% end %>
+</div> -->
+
+
+<div class="rvpg_top">
+	<div class="rvpg_title">
+		W.B.A. Comment History For: <%= @referee.name %>
+	</div>
+
+	<!-- <div class="rvpg_wba_score">
+		W.B.A. Score:  <%= @referee.score %>
+	</div> -->
+
+
+	<div class="rvpg_wba_logo">
+	  	<%= link_to root_path do %>
+			<%= image_tag ("WBA.PNG") %>
+			<% end %>
+		</div>
+
+	<div class="rvpg_homepage_button">
+		W.B.A. Homepage
+	</div>
+
+
+<div class="rvpg_bottom">
+
+
+	<div class="rvpg_reviews_area">
+	   Review History
+	</div>
+
+	<div class="rvpg_refphoto_area">
+		Official Bio:
+	</div>
+
+</div>
+
+<div class="rvpg_placeholder">
+<div class= "rvpg_total_review_history">
+	<% @reviews.each do |review| %>
+		<li>
+		<%= review.comment %>
+	</li>
+	<br>
+	<% end %>
+</div>
+
+<div class="rvpg_ref_photo_placeholder">
+	Place Ref Photo here
+</div>
 </div>

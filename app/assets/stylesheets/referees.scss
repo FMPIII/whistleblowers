@@ -3,8 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-background-color: #2d5c97;
+// background-color: #2d5c97;
 color: black;
+
 }
 // *****************TOP-SECTION ****************
 .ref_top_section{
@@ -16,12 +17,14 @@ color: black;
   height: 420px;
   margin-left: 20px;
   margin-bottom: -200px;
+  margin-top: 9px;
 }
 
-.wba_logo{
+.ref_wba_logo{
 margin-left: 20px;
+margin-top: 15px;
 }
-.wba_logo img{
+.ref_wba_logo img{
 width: 150px;
 margin-top: 10px;
 border-radius: 50%;
@@ -38,7 +41,7 @@ border-radius: 50%;
   width: 1209px;
   height: 420px;
   margin-left: 20px;
-  margin-bottom: -200px;
+  margin-top: 80px;
 }
 
 .ref_bottom_section{
@@ -46,9 +49,12 @@ border-radius: 50%;
   text-align: center;
 }
 
+
+
 .wba_acronymn{
   margin-left: 32px;
   margin-top: 17px;
+  width: 114px;
   background-color: #fee388;
     border: 2px solid black;
     text-shadow: -1px -1 black, -1 1px black, -1px -1 black, -1 -1px black;
@@ -62,8 +68,31 @@ border-radius: 50%;
     text-shadow: -1px -1 black, -1 1px black, -1px -1 black, -1 -1px black;
     text-align: center;
     font-size: 1em;
-  margin-top: 95px;
+  margin-top: 91px;
     margin-left: 32px;
+    width: 424px;
+}
+
+.refs_ranking_table{
+  width: 213px;
+  margin-left: 69px;
+margin-top: 74px;
+text-decoration: none;
+background-color: #fee388;
+border: 2px solid black;
+}
+
+.refs_ranking_table a{
+  text-decoration: none;
+}
+
+.rate_game_button a{
+  text-decoration: none;
+}
+
+.rate_game_button{
+  margin-top: -101px;
+margin-left: -20px;
 }
 
 
@@ -98,6 +127,7 @@ margin-top: 131px;
 
 .bottom_right{
 min-width: 200px;
+margin-left: 261px;
 }
 
 .officials_roster{
