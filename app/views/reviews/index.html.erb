@@ -10,7 +10,8 @@
 	<% end %>
 </div> -->
 
-
+<div class="review_page">
+	
 <div class="rvpg_top">
 	<div class="rvpg_title">
 		W.B.A. Comment History For: <%= @referee.name %>
@@ -48,9 +49,11 @@
 <div class="rvpg_placeholder">
 <div class= "rvpg_total_review_history">
 	<% @reviews.each do |review| %>
+		<% if review.comment.length > 3 %>
 		<li>
 		<%= review.comment %>
 	</li>
+		<% end %>
 	<br>
 	<% end %>
 </div>
@@ -66,3 +69,4 @@
   <div class="return_link">
     <%= link_to "Return to Home Page", root_path %>
   </div>
+</div>

@@ -5,11 +5,12 @@
 
 
 // ********THIS IS CSS FOR PAGE 3/ RATING/PAGE ********
-body{
+.review_page{
 
   background-image: url('second_court3');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 
 }
 
@@ -52,6 +53,7 @@ body{
     text-shadow: -1px -1 black, -1 1px black, -1px -1 black, -1 -1px black;
     text-align: center;
     font-size: 1.05em;
+    margin-bottom: 30px;
 }
 
 .survey_questions{

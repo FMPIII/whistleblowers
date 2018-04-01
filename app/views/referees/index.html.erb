@@ -20,11 +20,11 @@
 			 Whistle Blower's Association
 		</div>
 
-		<div class="wba_info">
+			<div class="wba_info">
 			<p> Welcome to the official website for the "Whistle Blower's Association", a page dedicated to holding every official accountable
 				for the calls that he makes! Here you can find the whistle rating for the officials you love to hate! You can search for your
-				team's most recent game, rate the official on his or her performance, and them a comment to tell them how you feel about their calls!<br>Ratings are based on an average of the questions answered! Our current rankings table shows the officials which are believed to be
-					the worst at the top of the list! Where is your favorite offical on this year's current rankings? </p>
+				team's most recent game, rate the official on his or her performance, and them a comment to tell them how you feel about their calls!<br>Offical's effenciency is based on an average of the questions answered! Our current rankings table shows the officials which are believed to have
+				the lowest effenciency percentage the top of the list! Where is your favorite offical on this year's current rankings? </p>
 
 		</div>
 
@@ -44,7 +44,7 @@
 		<% @referees_sorted_short.each do |referee| %>
 				<li class="worst-ref-list">
 				<%= link_to "#{referee.name}", referee_reviews_path(referee) %>
-				<%= referee.score %>
+				<%= (referee.score*100).round(0) %>%
 			</li>
 			<% end %>
 		</ol>
